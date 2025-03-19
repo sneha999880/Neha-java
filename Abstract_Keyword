@@ -1,0 +1,47 @@
+package mypack; 
+abstract class Abs1 
+{ 
+public Abs1() 
+{ 
+System.out.println("default constructor of Abs1"); 
+} 
+public Abs1(int x,int y) 
+{ 
+System.out.println("two parameterize of Abs1"); 
+} 
+public static void print() 
+{ 
+System.out.println("hello static method of Abs1"); 
+} 
+public void add(int x,int y) 
+{ 
+System.out.println(x+y); 
+} 
+public abstract void display(); 
+} 
+public class AbsDemo2 extends Abs1{ 
+public void display() 
+{ 
+System.out.println("hello"); 
+} 
+public AbsDemo2() 
+{ 
+super(); 
+} 
+public AbsDemo2(int x,int y) 
+{ 
+super(x,y); 
+} 
+public static void main(String[] args) { 
+Abs1 x1=new AbsDemo2(); 
+Abs1 x2=new AbsDemo2(44,55); 
+x1.display(); 
+Abs1.print(); 
+x1.add(11, 22);  
+} 
+output:- 
+default constructor of Abs1 
+two parameterize of Abs1 
+hello 
+hello static method of Abs1 
+33 
