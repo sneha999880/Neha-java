@@ -1,0 +1,23 @@
+package mypack; 
+interface I2 
+{ 
+public void display1(); 
+} 
+interface I3 
+{ 
+public void display2(); 
+} 
+public class InterDemo1 implements I2,I3{ 
+public void display1() { 
+System.out.println("hello interface of I2"); 
+} 
+public void display2() { 
+System.out.println("hello interface of I3"); 
+} 
+public static void main(String[] args) { 
+I2 x1=new InterDemo1(); 
+x1.display1(); 
+I3 x2=new InterDemo1(); 
+x2.display2(); 
+} 
+}
