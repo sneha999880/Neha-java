@@ -1,0 +1,39 @@
+class Engine { // Parent class
+    void start() {
+        System.out.println("Engine is starting...");
+    }
+
+    void stop() {
+        System.out.println("Engine is stopping...");
+    }
+
+    void move() {
+        System.out.println("Engine is moving...");
+    }
+}
+
+class Car { // child class
+    Engine e = new Engine();
+
+    void start() {
+        e.start();
+    }
+
+    void stop() {
+        e.stop();
+    }
+
+    void move() {
+        e.move();
+    }
+}
+
+public class Composition {
+    public static void main(String[] args) {
+        Car c = new Car();
+
+        c.start(); 
+        c.move();  
+        c.stop();  
+    }
+}
