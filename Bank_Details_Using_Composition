@@ -1,0 +1,66 @@
+
+class Bank {
+    private String bankName;
+    private String ifscCode;
+    private String branch;
+
+    public Bank(String bankName, String ifscCode, String branch) {
+        this.bankName = bankName;
+        this.ifscCode = ifscCode;
+        this.branch = branch;
+    }
+
+    public String getBankName() {
+        return bankName;
+    }
+
+    public String getIfscCode() {
+        return ifscCode;
+    }
+
+    public String getBranch() {
+        return branch;
+    }
+
+    @Override
+    public String toString() {
+        return "Bank Name: " + bankName + ", IFSC Code: " + ifscCode + ", Branch: " + branch;
+    }
+}
+
+class Account {
+    private String accountNumber;
+    private String accountName;
+    private Bank bank;
+
+    public Account(String accountNumber, String accountName, Bank bank) {
+        this.accountNumber = accountNumber;
+        this.accountName = accountName;
+        this.bank = bank;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountName() {
+        return accountName;
+    }
+
+    public Bank getBank() {
+        return bank;
+    }
+
+    @Override
+    public String toString() {
+        return "Account Number: " + accountNumber + ", Account Name: " + accountName + ", " + bank.toString();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Bank bank = new Bank("SBI Bank", "ABCD1234567", "Main Branch");
+        Account account = new Account("1234567890", "Neha", bank);
+        System.out.println(account.toString());
+    }
+}
