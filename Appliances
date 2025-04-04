@@ -1,0 +1,35 @@
+import java.util.List;
+import java.util.LinkedList;
+
+public class Appliances {
+    public static void main(String[] args) {
+
+        List<String> appliances = new LinkedList<>();
+        System.out.println("Initial LinkedList: " + appliances);
+
+       
+        appliances.add("TV");
+        appliances.add("AC");
+        appliances.add("Washing Machine");
+        System.out.println("After adding appliances: " + appliances);
+
+        appliances.remove(1); 
+        System.out.println("After removing an appliance: " + appliances);
+
+        String firstAppliance = appliances.get(0);
+        System.out.println("Accessed appliance: " + firstAppliance);
+
+        System.out.println("Appliances in the LinkedList:");
+        for (String appliance : appliances) {
+            System.out.println(appliance);
+        }
+
+        appliances.add("Mobile Phone");
+        System.out.println("After adding another appliance: " + appliances);
+
+
+        ((LinkedList<String>) appliances).addFirst("Refrigerator");
+        ((LinkedList<String>) appliances).addLast("Oven");
+        System.out.println("After adding appliances at first and last positions: " + appliances);
+    }
+}
