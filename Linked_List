@@ -1,0 +1,21 @@
+import java.util.List;
+import java.util.LinkedList;
+
+public class Linked_List{
+    public static void main(String[] args){
+        List<String> heros = new LinkedList<>();
+        System.out.println("My LinkedList:"+heros);
+        heros.add("Aman");
+        heros.add("shahid");
+        heros.add("Rishav");
+        
+        System.out.println("My Linked List After adding:"+heros);
+        heros.remove(1);
+        System.out.println("My Linked List After removing:"+heros);
+        
+        
+        String temp = heros.get(0);
+        System.out.println("My Linked List After adding:"+temp);
+        
+    }
+}
