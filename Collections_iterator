@@ -1,0 +1,29 @@
+
+ import java.util.List;
+ import java.util.ArrayList;
+ 
+ public class Collections
+ {
+ 	public static void main(String[] args) {
+ 	   List<Integer> numbers = new ArrayList<>();
+ 		System.out.println("My numbers List:"+numbers);
+ 		numbers.add(100);
+ 		numbers.add(200);
+ 		numbers.add(300);
+ 		numbers.add(400);
+ 		numbers.add(500);
+ 		
+ 		int temp = numbers.get(0);
+ 		System.out.println("my number list element using temp var:"+temp);
+         System.out.println("My Numbers List After Adding Elements:"+numbers);
+         numbers.remove(2);
+         System.out.println("My numbers List After Removing Elements:"+numbers);
+         
+         for (int num:numbers){
+             System.out.println("my number list using iterator:"+num);
+         }
+ 
+ 
+ 
+ 	}
+ }
