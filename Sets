@@ -1,0 +1,20 @@
+import java.util.Set;
+import java.util.HashSet;
+
+
+public class Sets
+{
+	public static void main(String[] args) {
+	    Set<String> gods = new HashSet<>();
+	   	System.out.println("My Empty Set:"+gods);
+	    gods.add("Ganesha");
+	    gods.add("Krishna");
+	    gods.add("Durga");
+	    gods.add("Shiv");
+	    gods.add("Parvati");
+	    System.out.println("My Empty Set After adding:"+gods);
+        
+        
+       
+	}
+}
