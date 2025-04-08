@@ -1,0 +1,15 @@
+import java.util.Set;
+import java.util.HashSet;
+
+public class Chocolates {
+    public static void main(String[] args) {
+        Set<String> chocolates = new HashSet<>();
+        System.out.println("My Empty Set: " + chocolates);
+        chocolates.add("Amul");
+        chocolates.add("Dairy Milk");
+        chocolates.add("Munch");
+        chocolates.add("Milky Bar");
+        chocolates.add("Kit Kat");
+        System.out.println("My Set After Adding: " + chocolates);
+    }
+}
