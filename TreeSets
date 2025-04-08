@@ -1,0 +1,23 @@
+import java.util.TreeSet;
+import java.util.HashSet;
+
+
+public class Sets
+{
+	public static void main(String[] args) {
+	    TreeSet<String> gods = new TreeSet<>();
+	   	System.out.println("My Empty Set:"+gods);
+	    gods.add("Ganesha");
+	    gods.add("Krishna");
+	    gods.add("Durga");
+	    gods.add("Shiv");
+	    gods.add("Parvati");
+	    gods.add("Krishna");
+	    gods.add(Null);
+	    gods.add(Null);
+	    System.out.println("My Empty Set After adding:"+gods);
+        
+        
+       
+	}
+}
