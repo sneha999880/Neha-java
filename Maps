@@ -1,0 +1,19 @@
+import java.util.Map;
+import java.util.HashMap;
+
+public class Maps
+{
+	public static void main(String[] args) {
+	    Map<String,Integer> colors = new HashMap<>();
+		System.out.println("My Empty Map:"+colors);
+		colors.put("white",1);
+		colors.put("red",2);
+		colors.put("pink",3);
+		colors.put("black",4);	
+		colors.put("purple",5);
+		System.out.println("My Empty Map After Adding:"+colors);
+		colors.remove("red");
+    	System.out.println("My Empty Map After Removing:"+colors);
+		
+	}
+}
