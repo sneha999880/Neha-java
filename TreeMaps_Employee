@@ -1,0 +1,24 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeMaps
+{
+	public static void main(String[] args) {
+	    Map<String,Integer> employee = new TreeMap<>();
+		System.out.println("My Empty Map:"+employee);
+		employee.put("Neha",1);
+		employee.put("Rishav",2);
+		employee.put("Aman",3);
+		employee.put("Doly",4);
+		employee.put("Prity",5);
+		System.out.println("My Empty Map After Adding:"+employee);
+		employee.remove("Aman");
+    	System.out.println("My Empty Map After Removing:"+employee);
+    	
+    	for(Map.Entry<String,Integer>entry : employee.entrySet()){
+    	    System.out.println("Keys:=>"+entry.getKey()+"Values:=>"+entry.getValue());
+    	    
+    	}
+		
+	}
+}
