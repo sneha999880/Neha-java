@@ -1,0 +1,16 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class File_Handling {
+    public static void main(String[] args) {
+        try {
+            FileWriter fileWriter = new FileWriter("Java.txt"); 
+            fileWriter.write("Java is a high-level, programming language.");
+            fileWriter.close();
+            System.out.println("File Created");
+        } catch (IOException e) {
+            System.out.println("File not Created");
+            e.printStackTrace(); 
+        }
+    }
+}
